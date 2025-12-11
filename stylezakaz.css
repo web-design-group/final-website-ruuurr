@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Nico Moji';
+    src: url('fonts/NicoMoji-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', Arial, sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Layout/Containers */
+.container.custom-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    margin: 0 0 64px 0;
+}
+
+.header-background {
+    width: 100%;
+    background-color: #FFBACC;
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Nico Moji', Arial, sans-serif;
+    font-size: 36px;
+    text-transform: lowercase;
+    line-height: 90px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Поле поиска */
+.search-input {
+    width: 325px;
+    height: 55px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 0 15px;
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    outline: none;
+}
+
+/* Навигация */
+.navigation {
+    margin: 0;
+}
+
+.nav-link {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+/* Кнопка */
+.callback-btn {
+    width: 204px;
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-confirmed-box {
+    width: 440px !important;
+    height: 120px;
+    background-color: #EBF4FF !important;
+    border: none !important;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 60px;
+}
+
+.order-image {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.order-text {
+    width: 100%;
+}
+
+.order-title {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.order-confirmed-box .btn-close {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+
+    .order-confirmed-box .btn-close:hover {
+        opacity: 0.7;
+    }
+
+/* Информация о заказе */
+.order-info-container {
+    width: 100%;
+    background-color: #EBF4FF;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.order-info-content {
+    position: relative;
+}
+
+.order-info-title {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.info-fields {
+    margin-top: 20px;
+}
+
+.info-label {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    height: 55px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    padding: 0 15px;
+}
+
+    .form-control:read-only {
+        background-color: white;
+        border-color: #000;
+    }
+
+.alert-info {
+    background-color: #EBF4FF;
+    border: 2px solid #EBF4FF;
+    border-radius: 10px;
+    color: #000;
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Прогресс-бар */
+.progress-container {
+    margin-top: 40px;
+}
+
+.progress-title {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.progress {
+    border: 2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #FFBACC;
+    color: #000;
+    font-family: 'Jost', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.progress-steps {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Футер */
+.footer {
+    width: 100%;
+    background-color: #FFBACC;
+    margin-top: 32px;
+}
+
+.footer-logo {
+    font-family: 'Nico Moji', Arial, sans-serif;
+    font-size: 64px;
+}
+
+.footer-nav {
+    gap: 0;
+}
+
+.footer-nav-item {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.footer-contacts {
+    text-align: right;
+    font-style: normal;
+}
+
+.contacts-title {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.contact-item {
+    font-family: 'Jost', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-style: normal;
+}
+
